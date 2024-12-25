@@ -8,6 +8,9 @@ import { NavigationPaths } from './src/config/NavigationPaths'
 import SplashScreen from './src/screens/splash_screen/SplashScreen'
 import { useDispatch, useSelector } from 'react-redux'
 import { setThemeMode, ThemeColorsType, ThemeModeType } from './src/store/themeSlice'
+import UseApiHookContextStore from 'useapihook-dexterverse/context/UseApiHookContextStore'
+import SignIn from './src/screens/auth/SignIn'
+import SignUp from './src/screens/auth/SignUp'
 
 
 const Stack = createNativeStackNavigator();
@@ -50,32 +53,47 @@ const App = () => {
 
 
   return (
-    <SafeAreaView
-      style={{
-        flex: 1,
-        marginTop: statusBarHeight,
-        backgroundColor:colors.white
-      }}>
+    <>
       <StatusBar
         translucent={true}
         backgroundColor={colors.white}
-        barStyle={selectedThemeMode==="light"?"dark-content":"light-content"}
+        barStyle={selectedThemeMode === "light" ? "dark-content" : "light-content"}
       />
 
-      <NavigationContainer>
-        <Stack.Navigator
-          initialRouteName={NavigationPaths.SPLASH_SCREEN}
-          screenOptions={{ headerShown: false, }}
-        >
-          <Stack.Screen
-            name={NavigationPaths.SPLASH_SCREEN}
-            component={SplashScreen} />
-        </Stack.Navigator>
-      </NavigationContainer>
+      <SafeAreaView
+        style={{
+          flex: 1,
+          backgroundColor: colors.white
+        }}>
+        <NavigationContainer>
+          <UseApiHookContextStore
+            initialProp={{
+              // pageNotFoundFu nc:()=>{navigation.navigate('PageNotFound')}
+            }}
+          >
+            <Stack.Navigator
+              initialRouteName={NavigationPaths.SPLASH_SCREEN}
+              screenOptions={{ headerShown: false, }}
+            >
+              <Stack.Screen
+                name={NavigationPaths.SPLASH_SCREEN}
+                component={SplashScreen}
+              />
+              <Stack.Screen
+                name={NavigationPaths.SIGN_IN}
+                component={SignIn}
+              />
+              <Stack.Screen
+                name={NavigationPaths.SIGN_UP}
+                component={SignUp}
+              />
+            </Stack.Navigator>
+          </UseApiHookContextStore>
+        </NavigationContainer>
 
+      </SafeAreaView>
+    </>
 
-
-    </SafeAreaView>
   )
 }
 

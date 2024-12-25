@@ -10,7 +10,7 @@ export type ThemeColorsType = {
     white: string,
     black: string,
     placeHolderColor: string,
-
+    primary1000:string
 };
 
 const lightThemeColors:ThemeColorsType = {
@@ -19,7 +19,8 @@ const lightThemeColors:ThemeColorsType = {
     warning: '#FF8800',
     white: '#FFFFFF',
     black: 'black',
-    placeHolderColor: "#8e8e8e"
+    placeHolderColor: "#8e8e8e",
+    primary1000:"#6936F5"
 }
 const darkThemeColors:ThemeColorsType = {
     error: '#FF0000',
@@ -27,7 +28,9 @@ const darkThemeColors:ThemeColorsType = {
     warning: '#FF8800',
     white: 'black',
     black: '#FFFFFF',
-    placeHolderColor: "#8e8e8e"
+    placeHolderColor: "#8e8e8e",
+    primary1000:"#6936F5"
+
 }
 
 

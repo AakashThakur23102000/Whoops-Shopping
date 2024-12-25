@@ -34,7 +34,7 @@ const getFontFamily = (baseFont: customFamilyType, weight: customWeightType): st
 };
 
 const fontSizes = {
-    extra_extra_large: scale(30),
+    extra_extra_large: scale(35),
     extra_large: scale(25),
     large: scale(18),
     regular: scale(14),
@@ -58,8 +58,6 @@ const CustomText: React.FC<CustomTextProps> = ({
 }) => {
     const fontFamily = customFamily !== "default" ? getFontFamily(customFamily, customWeight) : undefined;
     const fontWeight = customFamily === 'default' ? customWeight : undefined;
-    console.log("Font Family ----->>>", fontFamily, "===", fontWeight);
-
     var fontSize = fontSizes[customSize] || fontSizes.regular;
 
     return (
