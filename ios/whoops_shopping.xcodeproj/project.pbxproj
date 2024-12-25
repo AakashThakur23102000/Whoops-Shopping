@@ -13,8 +13,13 @@
 		13B07FBF1A68108700A75B9A /* Images.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = 13B07FB51A68108700A75B9A /* Images.xcassets */; };
 		13B07FC11A68108700A75B9A /* main.m in Sources */ = {isa = PBXBuildFile; fileRef = 13B07FB71A68108700A75B9A /* main.m */; };
 		7699B88040F8A987B510C191 /* libPods-whoops_shopping-whoops_shoppingTests.a in Frameworks */ = {isa = PBXBuildFile; fileRef = 19F6CBCC0A4E27FBF8BF4A61 /* libPods-whoops_shopping-whoops_shoppingTests.a */; };
+		7A09CF3FEE9141C3A68C9EC1 /* CormorantUpright-Light.ttf in Resources */ = {isa = PBXBuildFile; fileRef = 0414288D374944A789038E85 /* CormorantUpright-Light.ttf */; };
 		81AB9BB82411601600AC10FF /* LaunchScreen.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 81AB9BB72411601600AC10FF /* LaunchScreen.storyboard */; };
 		8800D3241E888C185B2A9421 /* PrivacyInfo.xcprivacy in Resources */ = {isa = PBXBuildFile; fileRef = 13B07FB81A68108700A75B9A /* PrivacyInfo.xcprivacy */; };
+		8A9DB529F25A4D6390E9C2DA /* CormorantUpright-Medium.ttf in Resources */ = {isa = PBXBuildFile; fileRef = 5D4BF01992FA409D89A7F1D9 /* CormorantUpright-Medium.ttf */; };
+		A62992A6E9C04876B057C2F8 /* CormorantUpright-Regular.ttf in Resources */ = {isa = PBXBuildFile; fileRef = A07233E9D00A4F4A97CB0595 /* CormorantUpright-Regular.ttf */; };
+		C36D24A7B4414387BF257219 /* CormorantUpright-Bold.ttf in Resources */ = {isa = PBXBuildFile; fileRef = 720C249FC9A24C5BB091B6D0 /* CormorantUpright-Bold.ttf */; };
+		EA1E0AD2284C4DA08CEDA0B9 /* CormorantUpright-SemiBold.ttf in Resources */ = {isa = PBXBuildFile; fileRef = 9F7853A1A1DF48A391EC0811 /* CormorantUpright-SemiBold.ttf */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXContainerItemProxy section */
@@ -31,6 +36,7 @@
 		00E356EE1AD99517003FC87E /* whoops_shoppingTests.xctest */ = {isa = PBXFileReference; explicitFileType = wrapper.cfbundle; includeInIndex = 0; path = whoops_shoppingTests.xctest; sourceTree = BUILT_PRODUCTS_DIR; };
 		00E356F11AD99517003FC87E /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
 		00E356F21AD99517003FC87E /* whoops_shoppingTests.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = whoops_shoppingTests.m; sourceTree = "<group>"; };
+		0414288D374944A789038E85 /* CormorantUpright-Light.ttf */ = {isa = PBXFileReference; explicitFileType = undefined; fileEncoding = undefined; includeInIndex = 0; lastKnownFileType = unknown; name = "CormorantUpright-Light.ttf"; path = "../assets/fonts/CormorantUpright-Light.ttf"; sourceTree = "<group>"; };
 		13B07F961A680F5B00A75B9A /* whoops_shopping.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = whoops_shopping.app; sourceTree = BUILT_PRODUCTS_DIR; };
 		13B07FAF1A68108700A75B9A /* AppDelegate.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; name = AppDelegate.h; path = whoops_shopping/AppDelegate.h; sourceTree = "<group>"; };
 		13B07FB01A68108700A75B9A /* AppDelegate.mm */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.cpp.objcpp; name = AppDelegate.mm; path = whoops_shopping/AppDelegate.mm; sourceTree = "<group>"; };
@@ -42,9 +48,13 @@
 		3B4392A12AC88292D35C810B /* Pods-whoops_shopping.debug.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-whoops_shopping.debug.xcconfig"; path = "Target Support Files/Pods-whoops_shopping/Pods-whoops_shopping.debug.xcconfig"; sourceTree = "<group>"; };
 		5709B34CF0A7D63546082F79 /* Pods-whoops_shopping.release.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-whoops_shopping.release.xcconfig"; path = "Target Support Files/Pods-whoops_shopping/Pods-whoops_shopping.release.xcconfig"; sourceTree = "<group>"; };
 		5B7EB9410499542E8C5724F5 /* Pods-whoops_shopping-whoops_shoppingTests.debug.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-whoops_shopping-whoops_shoppingTests.debug.xcconfig"; path = "Target Support Files/Pods-whoops_shopping-whoops_shoppingTests/Pods-whoops_shopping-whoops_shoppingTests.debug.xcconfig"; sourceTree = "<group>"; };
+		5D4BF01992FA409D89A7F1D9 /* CormorantUpright-Medium.ttf */ = {isa = PBXFileReference; explicitFileType = undefined; fileEncoding = undefined; includeInIndex = 0; lastKnownFileType = unknown; name = "CormorantUpright-Medium.ttf"; path = "../assets/fonts/CormorantUpright-Medium.ttf"; sourceTree = "<group>"; };
 		5DCACB8F33CDC322A6C60F78 /* libPods-whoops_shopping.a */ = {isa = PBXFileReference; explicitFileType = archive.ar; includeInIndex = 0; path = "libPods-whoops_shopping.a"; sourceTree = BUILT_PRODUCTS_DIR; };
+		720C249FC9A24C5BB091B6D0 /* CormorantUpright-Bold.ttf */ = {isa = PBXFileReference; explicitFileType = undefined; fileEncoding = undefined; includeInIndex = 0; lastKnownFileType = unknown; name = "CormorantUpright-Bold.ttf"; path = "../assets/fonts/CormorantUpright-Bold.ttf"; sourceTree = "<group>"; };
 		81AB9BB72411601600AC10FF /* LaunchScreen.storyboard */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = file.storyboard; name = LaunchScreen.storyboard; path = whoops_shopping/LaunchScreen.storyboard; sourceTree = "<group>"; };
 		89C6BE57DB24E9ADA2F236DE /* Pods-whoops_shopping-whoops_shoppingTests.release.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-whoops_shopping-whoops_shoppingTests.release.xcconfig"; path = "Target Support Files/Pods-whoops_shopping-whoops_shoppingTests/Pods-whoops_shopping-whoops_shoppingTests.release.xcconfig"; sourceTree = "<group>"; };
+		9F7853A1A1DF48A391EC0811 /* CormorantUpright-SemiBold.ttf */ = {isa = PBXFileReference; explicitFileType = undefined; fileEncoding = undefined; includeInIndex = 0; lastKnownFileType = unknown; name = "CormorantUpright-SemiBold.ttf"; path = "../assets/fonts/CormorantUpright-SemiBold.ttf"; sourceTree = "<group>"; };
+		A07233E9D00A4F4A97CB0595 /* CormorantUpright-Regular.ttf */ = {isa = PBXFileReference; explicitFileType = undefined; fileEncoding = undefined; includeInIndex = 0; lastKnownFileType = unknown; name = "CormorantUpright-Regular.ttf"; path = "../assets/fonts/CormorantUpright-Regular.ttf"; sourceTree = "<group>"; };
 		ED297162215061F000B7C4FE /* JavaScriptCore.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = JavaScriptCore.framework; path = System/Library/Frameworks/JavaScriptCore.framework; sourceTree = SDKROOT; };
 /* End PBXFileReference section */
 
@@ -109,6 +119,19 @@
 			name = Frameworks;
 			sourceTree = "<group>";
 		};
+		48CAB676134844DFB0268688 /* Resources */ = {
+			isa = PBXGroup;
+			children = (
+				720C249FC9A24C5BB091B6D0 /* CormorantUpright-Bold.ttf */,
+				0414288D374944A789038E85 /* CormorantUpright-Light.ttf */,
+				5D4BF01992FA409D89A7F1D9 /* CormorantUpright-Medium.ttf */,
+				A07233E9D00A4F4A97CB0595 /* CormorantUpright-Regular.ttf */,
+				9F7853A1A1DF48A391EC0811 /* CormorantUpright-SemiBold.ttf */,
+			);
+			name = Resources;
+			path = "";
+			sourceTree = "<group>";
+		};
 		832341AE1AAA6A7D00B99B32 /* Libraries */ = {
 			isa = PBXGroup;
 			children = (
@@ -125,6 +148,7 @@
 				83CBBA001A601CBA00E9B192 /* Products */,
 				2D16E6871FA4F8E400B85C8A /* Frameworks */,
 				BBD78D7AC51CEA395F1C20DB /* Pods */,
+				48CAB676134844DFB0268688 /* Resources */,
 			);
 			indentWidth = 2;
 			sourceTree = "<group>";
@@ -247,6 +271,11 @@
 				81AB9BB82411601600AC10FF /* LaunchScreen.storyboard in Resources */,
 				13B07FBF1A68108700A75B9A /* Images.xcassets in Resources */,
 				8800D3241E888C185B2A9421 /* PrivacyInfo.xcprivacy in Resources */,
+				C36D24A7B4414387BF257219 /* CormorantUpright-Bold.ttf in Resources */,
+				7A09CF3FEE9141C3A68C9EC1 /* CormorantUpright-Light.ttf in Resources */,
+				8A9DB529F25A4D6390E9C2DA /* CormorantUpright-Medium.ttf in Resources */,
+				A62992A6E9C04876B057C2F8 /* CormorantUpright-Regular.ttf in Resources */,
+				EA1E0AD2284C4DA08CEDA0B9 /* CormorantUpright-SemiBold.ttf in Resources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
