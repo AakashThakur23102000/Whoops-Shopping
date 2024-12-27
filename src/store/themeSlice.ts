@@ -10,26 +10,40 @@ export type ThemeColorsType = {
     white: string,
     black: string,
     placeHolderColor: string,
-    primary1000:string
+    primary100: string,
+    primary300: string,
+    primary500: string,
+    primary800: string,
+    primary1000: string
+
 };
 
-const lightThemeColors:ThemeColorsType = {
+const lightThemeColors: ThemeColorsType = {
     error: '#FF0000',
     success: '#00C851',
     warning: '#FF8800',
     white: '#FFFFFF',
     black: 'black',
     placeHolderColor: "#8e8e8e",
-    primary1000:"#6936F5"
+    primary100: "#6936F5",
+    primary300: "#7C4DF2",
+    primary500: "#8E64EF",
+    primary800: "#B2487F",
+    primary1000: "#a02e68"
+
 }
-const darkThemeColors:ThemeColorsType = {
+const darkThemeColors: ThemeColorsType = {
     error: '#FF0000',
     success: '#00C851',
     warning: '#FF8800',
     white: 'black',
     black: '#FFFFFF',
     placeHolderColor: "#8e8e8e",
-    primary1000:"#6936F5"
+    primary100: "#6936F5",
+    primary300: "#7C4DF2",
+    primary500: "#8E64EF",
+    primary800: "#B2487F",
+    primary1000: "#a02e68"
 
 }
 
