@@ -28,7 +28,7 @@ const SignIn = () => {
             // paddingHorizontal: projectPadding.paddingHorizontal,
             // paddingVertical: projectPadding.paddingVertical,
             padding: moderateScale(25),
-            rowGap: verticalScale(20)
+            rowGap: verticalScale(2)
         },
         defaultTextStyle: {
             color: colors.black,
@@ -45,7 +45,7 @@ const SignIn = () => {
             <StatusBar
                 translucent={true}
                 backgroundColor={colors.primary1000}
-                barStyle={selectedThemeMode === "light" ? "dark-content" : "light-content"}
+                barStyle={Platform.OS === "ios" ? "dark-content" : "light-content"}
             />
             <ScrollView
                 contentContainerStyle={{ flexGrow: 1 }}
@@ -64,13 +64,16 @@ const SignIn = () => {
                             customWeight='700'
                             style={styles.defaultTextStyle}>Login</CustomText>
 
-                        <TextInput
-                            mode="outlined"
-                            label="User Email"
-                            textContentType='emailAddress'
-                            keyboardType='email-address'
-                            right={<TextInput.Icon icon={() => <MaterialIcons name="remove-red-eye" size={scale(20)} color={colors.placeHolderColor} />} />}
-                        />
+                        <View>
+                            <TextInput
+                                mode="outlined"
+                                label="User Email"
+                                textContentType='emailAddress'
+                                keyboardType='email-address'
+                                error={true}
+                            />
+                            <CustomText>www</CustomText>
+                        </View>
                         <TextInput
                             mode="outlined"
                             label="User Password"
