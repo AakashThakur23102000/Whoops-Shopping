@@ -1,5 +1,5 @@
 import { View, Image, StatusBar, SafeAreaView, KeyboardAvoidingView, Platform, ScrollView } from 'react-native'
-import React from 'react'
+import React, { useEffect } from 'react'
 import { ThemeColorsType, ThemeModeType } from '../../store/themeSlice'
 import { useSelector } from 'react-redux'
 import { moderateScale, scale, ScaledSheet, verticalScale } from 'react-native-size-matters'
@@ -7,11 +7,17 @@ import { projectImages, projectPadding } from '../../config/UIConfig'
 import { Button, TextInput } from 'react-native-paper'
 import CustomText from '../../utils/CustomText'
 import MaterialIcons from "react-native-vector-icons/MaterialIcons"
+import Animated, { Easing, ReduceMotion, useAnimatedStyle, useSharedValue, withTiming } from 'react-native-reanimated'
 
 const SignIn = () => {
     var colors: ThemeColorsType = useSelector((state: any) => state.theme.colors)
     var selectedThemeMode: ThemeModeType = useSelector((state: any) => state.theme.themeMode)
-
+    var animatedY = useSharedValue(verticalScale((400)))
+    const animatedStyles = useAnimatedStyle(() => {
+        return {
+            transform: [{ translateY: animatedY.value }],
+        }
+    })
     const styles = ScaledSheet.create({
         screen: {
             flex: 1,
@@ -23,12 +29,13 @@ const SignIn = () => {
             resizeMode: "stretch",
         },
         bottomView: {
-            flex: 1,
+            height: "100%",
+            width: "100%",
             // borderWidth:1,
             // paddingHorizontal: projectPadding.paddingHorizontal,
             // paddingVertical: projectPadding.paddingVertical,
             padding: moderateScale(25),
-            rowGap: verticalScale(2)
+            rowGap: verticalScale(2),
         },
         defaultTextStyle: {
             color: colors.black,
@@ -40,6 +47,15 @@ const SignIn = () => {
             marginTop: "5%"
         }
     })
+
+    useEffect(() => {
+        animatedY.value = withTiming(verticalScale(0), {
+            duration: 800,
+            easing: Easing.inOut(Easing.cubic),
+            reduceMotion: ReduceMotion.System,
+        })
+    }, [])
+
     return (
         <>
             <StatusBar
@@ -57,7 +73,7 @@ const SignIn = () => {
                     keyboardVerticalOffset={0}
                 >
                     <Image source={projectImages.projectLogo} style={styles.logoImage} />
-                    <View style={styles.bottomView}>
+                    <Animated.View style={[styles.bottomView, animatedStyles]}>
                         <CustomText
                             customFamily='CormorantUpright'
                             customSize='extra_extra_large'
@@ -72,7 +88,7 @@ const SignIn = () => {
                                 keyboardType='email-address'
                                 error={true}
                             />
-                            <CustomText>www</CustomText>
+                            <CustomText>Error Text</CustomText>
                         </View>
                         <TextInput
                             mode="outlined"
@@ -89,7 +105,7 @@ const SignIn = () => {
                             style={styles.submitButton}
                             textColor={selectedThemeMode === "light" ? colors.white : colors.black}
                         >Submit</Button>
-                    </View>
+                    </Animated.View>
                 </KeyboardAvoidingView>
             </ScrollView>
         </>
